@@ -1,2 +1,2 @@
 # MyiMessageApp
-用Obeject-C写的一个iMessageApp
+用objective-c写的一个iMessageApp
