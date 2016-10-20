@@ -172,6 +172,8 @@
     NSURL * url;
     if (imageName) {
         url = [[NSBundle mainBundle] URLForResource:imageName withExtension:@""];
+    } else {
+        return;
     }
     
     //3发送附件(必须是fileUrl)
