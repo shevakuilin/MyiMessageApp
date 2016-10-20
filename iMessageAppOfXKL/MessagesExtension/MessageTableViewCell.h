@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MessageTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *ImageOfiMessage;
+@property (weak, nonatomic) IBOutlet UIImageView *iMessageImageView;
 
 @end

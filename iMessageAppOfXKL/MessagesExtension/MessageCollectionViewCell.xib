@@ -25,7 +25,7 @@
                 <constraint firstAttribute="bottom" secondItem="x3y-uj-DP5" secondAttribute="bottom" id="xSp-0l-Iua"/>
             </constraints>
             <connections>
-                <outlet property="ImageOfiMessage" destination="x3y-uj-DP5" id="hDa-Tt-xbJ"/>
+                <outlet property="iMessageImageView" destination="x3y-uj-DP5" id="gSe-eK-cus"/>
             </connections>
         </collectionViewCell>
     </objects>

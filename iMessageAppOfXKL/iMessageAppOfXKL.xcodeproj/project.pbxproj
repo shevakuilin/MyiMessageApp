@@ -207,6 +207,7 @@
 		773CACBD1DB85915005C8F45 /* MessageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCollectionViewCell.h; sourceTree = "<group>"; };
 		773CACBE1DB85915005C8F45 /* MessageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCollectionViewCell.m; sourceTree = "<group>"; };
 		773CACBF1DB85915005C8F45 /* MessageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCollectionViewCell.xib; sourceTree = "<group>"; };
+		77D363D61DB89865003BAAF6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E410165F80B2B03A105C2D42 /* libPods-iMessageAppOfXKL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMessageAppOfXKL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -271,14 +272,6 @@
 		773CAC0D1DB8555D005C8F45 /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
-				773CAC201DB85749005C8F45 /* 1 */,
-				773CAC2A1DB85749005C8F45 /* 2 */,
-				773CAC341DB85749005C8F45 /* 3 */,
-				773CAC3E1DB85749005C8F45 /* 4 */,
-				773CAC481DB85749005C8F45 /* 5 */,
-				773CAC521DB85749005C8F45 /* 6 */,
-				773CAC5C1DB85749005C8F45 /* 7 */,
-				773CAC661DB85749005C8F45 /* 8 */,
 				773CAC0E1DB8555D005C8F45 /* MessagesViewController.h */,
 				773CAC0F1DB8555D005C8F45 /* MessagesViewController.m */,
 				773CAC111DB8555D005C8F45 /* MainInterface.storyboard */,
@@ -288,6 +281,8 @@
 				773CACBD1DB85915005C8F45 /* MessageCollectionViewCell.h */,
 				773CACBE1DB85915005C8F45 /* MessageCollectionViewCell.m */,
 				773CACBF1DB85915005C8F45 /* MessageCollectionViewCell.xib */,
+				77D363D41DB897EA003BAAF6 /* ImageFile */,
+				77D363D51DB89837003BAAF6 /* Util */,
 				773CAC141DB8555D005C8F45 /* Assets.xcassets */,
 				773CAC161DB8555D005C8F45 /* Info.plist */,
 			);
@@ -420,6 +415,29 @@
 				773CAC6F1DB85749005C8F45 /* 8_9.gif */,
 			);
 			path = 8;
+			sourceTree = "<group>";
+		};
+		77D363D41DB897EA003BAAF6 /* ImageFile */ = {
+			isa = PBXGroup;
+			children = (
+				773CAC201DB85749005C8F45 /* 1 */,
+				773CAC2A1DB85749005C8F45 /* 2 */,
+				773CAC341DB85749005C8F45 /* 3 */,
+				773CAC3E1DB85749005C8F45 /* 4 */,
+				773CAC481DB85749005C8F45 /* 5 */,
+				773CAC521DB85749005C8F45 /* 6 */,
+				773CAC5C1DB85749005C8F45 /* 7 */,
+				773CAC661DB85749005C8F45 /* 8 */,
+			);
+			name = ImageFile;
+			sourceTree = "<group>";
+		};
+		77D363D51DB89837003BAAF6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				77D363D61DB89865003BAAF6 /* PrefixHeader.pch */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		A4F935726DF7E3234078005E /* Pods */ = {
@@ -786,6 +804,8 @@
 			baseConfigurationReference = 18817DF18E84BD2CB5C6942D /* Pods-iMessageAppOfXKL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iMessageAppOfXKL/PrefixHeader";
 				INFOPLIST_FILE = iMessageAppOfXKL/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = sheva.iMessageAppOfXKL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -798,6 +818,8 @@
 			baseConfigurationReference = 6E10A49B5818137730EFF722 /* Pods-iMessageAppOfXKL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iMessageAppOfXKL/PrefixHeader";
 				INFOPLIST_FILE = iMessageAppOfXKL/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = sheva.iMessageAppOfXKL;
 				PRODUCT_NAME = "$(TARGET_NAME)";

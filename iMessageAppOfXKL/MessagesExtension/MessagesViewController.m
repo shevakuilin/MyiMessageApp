@@ -9,7 +9,7 @@
 #import "MessagesViewController.h"
 #import "MessageTableViewCell.h"
 #import "MessageCollectionViewCell.h"
-
+#import "PrefixHeader.pch"
 @interface MessagesViewController ()<UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -115,7 +115,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MessageTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"table"];
-    cell.ImageOfiMessage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_1.gif", @(indexPath.row + 1)]];
+//    cell.iMessageImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_1.gif", @(indexPath.row + 1)]];
+    NSString * imageName = [NSString stringWithFormat:@"%@_1.gif", @(indexPath.row + 1)];
+    NSString * filePath = [[NSBundle bundleWithPath:[[NSBundle mainBundle] bundlePath]] pathForResource:imageName ofType:nil];
+    NSData * imageData = [NSData dataWithContentsOfFile:filePath];
+    cell.iMessageImageView.image = [UIImage sd_animatedGIFWithData:imageData];
     
     return cell;
 }
@@ -147,7 +151,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     MessageCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collection" forIndexPath:indexPath];
-    cell.ImageOfiMessage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif", @(indexPath.section + 1), @(indexPath.item + 1)]];
+    cell.iMessageImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@.gif", @(indexPath.section + 1), @(indexPath.item + 1)]];
     
     return cell;
 }
