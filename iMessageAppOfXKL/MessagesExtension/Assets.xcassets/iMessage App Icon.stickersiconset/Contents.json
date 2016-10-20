@@ -1,8 +1,9 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
       "size" : "60x45",
+      "idiom" : "iphone",
+      "filename" : "1Password_512px_1120098_easyicon.net.png",
       "scale" : "2x"
     },
     {
