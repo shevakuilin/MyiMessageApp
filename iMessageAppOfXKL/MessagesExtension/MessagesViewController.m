@@ -87,7 +87,7 @@
 
 /*
  唤起过程
- - 唤起过程发生在MessagesViewController的presentationStyle发生变化时。
+ - 唤起过程发生在MSMessagesAppViewController的presentationStyle发生变化时。
  */
 -(void)willTransitionToPresentationStyle:(MSMessagesAppPresentationStyle)presentationStyle {
     // Called before the extension transitions to a new presentation style.
