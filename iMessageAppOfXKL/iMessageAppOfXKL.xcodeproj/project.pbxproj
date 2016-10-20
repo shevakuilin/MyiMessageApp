@@ -689,6 +689,7 @@
 /* Begin XCBuildConfiguration section */
 		773CAC171DB8555D005C8F45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18817DF18E84BD2CB5C6942D /* Pods-iMessageAppOfXKL.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -736,6 +737,7 @@
 		};
 		773CAC181DB8555D005C8F45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E10A49B5818137730EFF722 /* Pods-iMessageAppOfXKL.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -777,6 +779,7 @@
 		};
 		773CAC1A1DB8555D005C8F45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18817DF18E84BD2CB5C6942D /* Pods-iMessageAppOfXKL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
@@ -789,6 +792,7 @@
 		};
 		773CAC1B1DB8555D005C8F45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E10A49B5818137730EFF722 /* Pods-iMessageAppOfXKL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
@@ -805,11 +809,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/iMessageAppOfXKL/PrefixHeader";
+				GCC_PREFIX_HEADER = /Users/huiren/Desktop/MyiMessageApp/iMessageAppOfXKL/MessagesExtension/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+				);
 				INFOPLIST_FILE = iMessageAppOfXKL/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = sheva.iMessageAppOfXKL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -819,11 +830,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/iMessageAppOfXKL/PrefixHeader";
+				GCC_PREFIX_HEADER = /Users/huiren/Desktop/MyiMessageApp/iMessageAppOfXKL/MessagesExtension/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+				);
 				INFOPLIST_FILE = iMessageAppOfXKL/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = sheva.iMessageAppOfXKL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};
