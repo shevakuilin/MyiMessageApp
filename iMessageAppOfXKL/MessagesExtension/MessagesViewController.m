@@ -199,7 +199,7 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     if (scrollView == self.collectionView) {
-        self.isSelect = NSNotFound;
+        self.isSelect = NO;
     }
 }
 
